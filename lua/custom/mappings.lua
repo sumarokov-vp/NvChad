@@ -21,13 +21,20 @@ M.dap_python = {
 
 M.copilot = {
   i = {
-    ["<C-A>"] = {
+    ["<C-a>"] = {
       function()
         vim.fn.feedkeys(vim.fn['copilot#Accept'](), '')
       end,
       "Copilot Accept",
        {replace_keycodes = true, nowait=true, silent=true, expr=true, noremap=true}
       }
+  }
+}
+
+M.lazygit = {
+  plugin = true,
+  n = {
+    ["<leader>gg"] = {"<cmd> LazyGit <CR>", "LazyGit"},
   }
 }
 
