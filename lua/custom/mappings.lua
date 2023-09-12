@@ -1,5 +1,13 @@
 local M = {}
 
+M.abc = {
+  i = {
+    ["jk"] = { "<ESC>", "escape insert mode" , opts = { nowait = true }},
+    ["jj"] = { "<ESC>", "escape insert mode" , opts = { nowait = true }},
+    ["kk"] = { "<ESC>", "escape insert mode" , opts = { nowait = true }},
+  }
+}
+
 M.dap = {
   plugin = true,
   n = {
