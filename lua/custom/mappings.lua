@@ -5,7 +5,11 @@ M.abc = {
     ["jk"] = { "<ESC>", "escape insert mode" , opts = { nowait = true }},
     ["jj"] = { "<ESC>", "escape insert mode" , opts = { nowait = true }},
     ["kk"] = { "<ESC>", "escape insert mode" , opts = { nowait = true }},
-  }
+  },
+
+  n = {
+    ["gr"] = { "<cmd> Telescope lsp_references <CR>", "LSP References" },
+  },
 }
 
 M.dap = {
@@ -26,18 +30,18 @@ M.dap_python = {
     }
   }
 }
-
-M.copilot = {
-  i = {
-    ["<C-a>"] = {
-      function()
-        vim.fn.feedkeys(vim.fn['copilot#Accept'](), '')
-      end,
-      "Copilot Accept",
-       {replace_keycodes = true, nowait=true, silent=true, expr=true, noremap=true}
-      }
-  }
-}
+--
+-- M.copilot = {
+--   i = {
+--     ["<C-a>"] = {
+--       function()
+--         vim.fn.feedkeys(vim.fn['copilot#Accept'](), '')
+--       end,
+--       "Copilot Accept",
+--        {replace_keycodes = true, nowait=true, silent=true, expr=true, noremap=true}
+--       }
+--   }
+-- }
 
 M.lazygit = {
   plugin = true,
