@@ -38,4 +38,11 @@ M.lazygit = {
   }
 }
 
+M.rest = {
+  plugin = true,
+  n = {
+    ["<leader>rr"] = {"<cmd> lua require('rest-nvim').run()<CR>", "RestNvim"},
+  }
+}
+
 return M
