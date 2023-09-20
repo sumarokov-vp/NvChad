@@ -109,42 +109,13 @@ local plugins = {
       })
       require("core.utils").load_mappings("rest")
     end,
-
-  },
-  {
-<<<<<<< HEAD
-    "nvim-neotest/neotest-python",
-    lazy = false,
   },
   { 
-    "nvim-neotest/neotest",
-    lazy = false,
-    dependencies = {
-      "nvim-lua/plenary.nvim",
-      "nvim-treesitter/nvim-treesitter",
-      "antoinemadec/FixCursorHold.nvim"
-    },
-    config = function()
-      require("core.utils").load_mappings("neotest")
-      require("neotest").setup({
-        adapters = {
-          require("neotest-python")({
-            dap = { justMyCode = false },
-          }),
-          -- require("neotest-plenary"),
-          -- require("neotest-vim-test")({
-          --   ignore_file_types = { "python", "vim", "lua" },
-          -- }),
-        },
-      })
-    end,
-=======
     "ggandor/leap.nvim",
     lazy = false,
     config= function ()
       require('leap').add_default_mappings()
     end
->>>>>>> cd8166194fd5dcac7a4ca3386ab795377352bc96
   },
 }
 return plugins
