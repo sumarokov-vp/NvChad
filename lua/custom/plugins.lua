@@ -112,6 +112,7 @@ local plugins = {
 
   },
   {
+<<<<<<< HEAD
     "nvim-neotest/neotest-python",
     lazy = false,
   },
@@ -137,6 +138,13 @@ local plugins = {
         },
       })
     end,
+=======
+    "ggandor/leap.nvim",
+    lazy = false,
+    config= function ()
+      require('leap').add_default_mappings()
+    end
+>>>>>>> cd8166194fd5dcac7a4ca3386ab795377352bc96
   },
 }
 return plugins
