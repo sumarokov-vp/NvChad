@@ -45,4 +45,14 @@ M.rest = {
   }
 }
 
+M.neotest = {
+  plugin = true,
+  n = {
+    ["<leader>tt"] = {"<cmd> TestFile <CR>", "TestFile"},
+    ["<leader>tn"] = {"<cmd> TestNearest <CR>", "TestNearest"},
+    ["<leader>ts"] = {"<cmd> TestSuite <CR>", "TestSuite"},
+    ["<leader>tl"] = {"<cmd> TestLast <CR>", "TestLast"},
+  }
+}
+
 return M
