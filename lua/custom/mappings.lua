@@ -55,4 +55,12 @@ M.neotest = {
   }
 }
 
+M.dadbod = {
+  plugin = true,
+  v = {
+    -- ["<leader>du"] = {"<cmd> DBUIToggle <CR>", "DBUIToggle"},
+    ["ee"] = {"<cmd> '<,'>DB $DB_PATH <CR>", "Execute script"},
+  }
+}
+
 return M

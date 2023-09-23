@@ -117,5 +117,18 @@ local plugins = {
       require('leap').add_default_mappings()
     end
   },
+  {
+    "tpope/vim-dadbod",
+    dependencies = {"tpope/vim-dotenv", "kristijanhusak/vim-dadbod-ui"},
+    lazy = false,
+    ft = {"sql"},
+    config= function ()
+      require("core.utils").load_mappings("dadbod")
+    end
+    -- create .env file in the root of the project
+    -- and add the following line
+    -- DB_PATH = postgresql://sumarokov:Leonard0@localhost:32768/p2p
+
+  },
 }
 return plugins
