@@ -270,4 +270,12 @@ if #config.plugins > 0 then
   table.insert(default_plugins, { import = config.plugins })
 end
 
+-- add plugins from lua/my_plugins folder
+if vim.fn.isdirectory(vim.fn.stdpath "config" .. "/lua/my_plugins") == 1 then
+  for _, plug in ipairs(vim.fn.glob(vim.fn.stdpath "config" .. "/lua/my_plugins/*.lua", 0, 1)) do
+    local plugin = require("my_plugins/" .. vim.fn.fnamemodify(plug, ":t:r"))
+    table.insert(default_plugins, plugin)
+  end
+end
+
 require("lazy").setup(default_plugins, config.lazy_nvim)

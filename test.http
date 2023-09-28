@@ -1,0 +1,2 @@
+GET https://openexchangerates.org/api/latest.json?app_id=ebdd350bed8d4a29a12e7a78910e5ce2
+Accept application/json
