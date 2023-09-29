@@ -9,7 +9,7 @@ return {
       {"K", "<cmd>ALEHover<cr>", desc = "Sow hover (ALE)"},
       {"<leader>j", "<cmd>ALENext<cr>", desc = "Next diagnostic (ALE)"},
       {"<leader>k", "<cmd>ALEPrevious<cr>", desc = "Previous diagnostic (ALE)"},
-      {"<leader>f", "<cmd>ALEFix<cr>", desc = "Fix pretty (ALE)"},
+      {"<leader>a", "<cmd>ALEFix<cr>", desc = "Fix pretty (ALE)"},
       {"<leader>l", "<cmd>ALELint<cr>", desc = "Lint (ALE)"},
 
     },
